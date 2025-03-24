@@ -1,0 +1,7 @@
+<h1>The Counter Signal</h1>
+
+<h3>Counter: {{ counter_signal() }}</h3>
+<button (click)="modifier(1)">+1</button>
+<button (click)="modifier(-1)">-1</button>
+<button (click)="reset()">Reset Counter</button>
+<router-outlet />
