@@ -4,11 +4,11 @@ import { HeroPagesComponent } from './pages/hero/hero-pages.component';
 
 export const routes: Routes = [
   {
-    path: '/hero',
+    path: 'hero',
     component: HeroPagesComponent,
   },
-  // {
-  //   path: '/counter',
-  //   component: CounterPagesComponent,
-  // },
+  {
+    path: 'counter',
+    component: CounterPagesComponent,
+  },
 ];

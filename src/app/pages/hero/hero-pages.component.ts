@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, computed } from '@angular/core';
 
 @Component({
   templateUrl: './hero-pages.component.html',
@@ -9,7 +9,7 @@ export class HeroPagesComponent {
 
   //methods
   getHeroDescription() {
-    return `${this.name} - ${this.age}`;
+    return `${this.name()} - ${this.age()}`;
   }
 
   changeHero() {
@@ -19,7 +19,22 @@ export class HeroPagesComponent {
     );
   }
 
-  resetForm() {
-    this.name, this.age;
+  changeAge() {
+    this.age.update((current) => (current = 60));
   }
+
+  resetForm() {
+    this.name.set('Ironman');
+    this.age.set(45);
+  }
+
+  // allCaps() {
+  //   return computed(() => this.name().toUpperCase);
+  // }
+
+  //changing a signal to upperCase
+  // get allCaps() {
+  //   const capsHero = this.name().toUpperCase();
+  //   return capsHero;
+  // }
 }
