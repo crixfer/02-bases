@@ -1,7 +1,9 @@
+import { UpperCasePipe } from '@angular/common';
 import { Component, signal, computed } from '@angular/core';
 
 @Component({
   templateUrl: './hero-pages.component.html',
+  imports: [UpperCasePipe],
 })
 export class HeroPagesComponent {
   name = signal('Ironman');

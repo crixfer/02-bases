@@ -1,6 +1,17 @@
+<style>
+  button {
+    margin-left: 10px;
+    border: solid 2px black;
+    border-radius: 3px;
+    background-color: lightblue;
+  }
+</style>
+
 <h1>The Counter Signal</h1>
 
 <h3>Counter: {{ counter_signal() }}</h3>
+
+<hr />
 <button (click)="modifier(1)">+1</button>
 <button (click)="modifier(-1)">-1</button>
 <button (click)="reset()">Reset Counter</button>
