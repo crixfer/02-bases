@@ -7,11 +7,11 @@ interface Character {
 }
 
 @Component({
-  selector: 'app-dragob-ball-pages',
+  selector: 'app-dragon-ball-pages',
   imports: [],
-  templateUrl: './dragob-ball-pages.component.html',
+  templateUrl: './dragon-ball-pages.component.html',
 })
-export class DragobBallPagesComponent {
+export class DragonBallPagesComponent {
   name = signal('');
   power = signal(0);
 
